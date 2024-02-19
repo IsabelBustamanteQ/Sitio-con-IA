@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Estilo para ajustar tamaño fijo de la imagen */
+    #me-image {
+      width: 200px;
+      height: auto;
+    }
+    /* Estilos para el footer */
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+    }
+    /* Estilos para el tema oscuro */
+    body.dark {
+      background-color: #222;
+      color: #fff;
+    }
+    .navbar.dark .navbar-brand,
+    .navbar.dark .navbar-nav .nav-link,
+    .navbar.dark .navbar-toggler-icon {
+      color: #fff;
+    }
+    .navbar.dark .navbar-toggler-icon {
+      border-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mi Portafolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Acerca de mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portafolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+          <li class="nav-item">
+            <button class="btn btn-dark" id="dark-mode-toggle">Tema Oscuro</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Acerca de mí -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+          <div>
+            <h2>Isabel Bustamante</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et dapibus libero. Aliquam erat volutpat.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img id="me-image" src="me.png" alt="Foto de Isabel Bustamante">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Habilidades -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2>Habilidades</h2>
+      <!-- Filas de habilidades -->
+      <!-- Primera fila -->
+      <div class="row">
+        <div class="col-md-6">
+          <img src="habilidad1.png" alt="Habilidad 1" class="img-fluid" style="max-width: 150px;">
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <div>
+            <h3>CSS</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Segunda fila -->
+      <div class="row">
+        <div class="col-md-6">
+          <img src="habilidad2.png" alt="Habilidad 2" class="img-fluid" style="max-width: 150px;">
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <div>
+            <h3>HTML</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Tercera fila -->
+      <div class="row">
+        <div class="col-md-6">
+          <img src="habilidad3.png" alt="Habilidad 3" class="img-fluid" style="max-width: 150px;">
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <div>
+            <h3>JavaScript</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Portafolio -->
+  <section id="portfolio" class="py-5">
+    <div class="container text-center">
+      <h2>Portafolio</h2>
+      <!-- Fila de portafolio -->
+      <div class="row">
+        <div class="col-md-4">
+          <img src="portafolio1.jpg" alt="Proyecto 1" class="img-fluid mb-3">
+          <h3>Proyecto 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPortafolio1">Ver</button>
+        </div>
+        <div class="col-md-4">
+          <img src="portafolio2.jpg" alt="Proyecto 2" class="img-fluid mb-3">
+          <h3>Proyecto 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPortafolio2">Ver</button>
+        </div>
+        <div class="col-md-4">
+          <img src="portafolio3.jpg" alt="Proyecto 3" class="img-fluid mb-3">
+          <h3>Proyecto 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPortafolio3">Ver</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Servicios -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2>Servicios</h2>
+      <!-- Filas de servicios -->
+      <!-- Primera fila -->
+      <div class="row">
+        <div class="col-md-4">
+          <img src="servicio1.jpg" alt="Servicio 1" class="img-fluid" style="max-width: 150px;">
+        </div>
+        <div class="col-md-8 d-flex align-items-center">
+          <div>
+            <h3>Servicio 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalServicio1">Ver</button>
+          </div>
+        </div>
+      </div>
+      <!-- Segunda fila -->
+      <div class="row">
+        <div class="col-md-4">
+          <img src="servicio2.jpg" alt="Servicio 2" class="img-fluid" style="max-width: 150px;">
+        </div>
+        <div class="col-md-8 d-flex align-items-center">
+          <div>
+            <h3>Servicio 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalServicio2">Ver</button>
+          </div>
+        </div>
+      </div>
+      <!-- Tercera fila -->
+      <div class="row">
+        <div class="col-md-4">
+          <img src="servicio3.jpg" alt="Servicio 3" class="img-fluid" style="max-width: 150px;">
+        </div>
+        <div class="col-md-8 d-flex align-items-center">
+          <div>
+            <h3>Servicio 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalServicio3">Ver</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contacto</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre">
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Escriba su mensaje aquí"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Derechos de autor &copy; Isabel Bustamante</p>
+    </div>
+  </footer>
+
+  <!-- Modales de portafolio -->
+  <!-- Modales de servicios -->
+  <!-- Bootstrap JS y jQuery (opcional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- JavaScript para el tema oscuro -->
+  <script>
+    // Selecciona el botón de cambio de tema
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    // Agrega un listener para el clic en el botón
+    darkModeToggle.addEventListener('click', () => {
+      // Obtiene el elemento body
+      const body = document.body;
+      // Alterna la clase dark en el body para cambiar el tema
+      body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
